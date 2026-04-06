@@ -1,0 +1,18 @@
+"""Alembic script template."""
+from typing import Union
+
+from alembic import op
+import sqlalchemy as sa
+
+revision: str = "REVISON_ID"
+down_revision: Union[str, None] = None
+branch_labels: Union[str, None] = None
+depends_on: Union[str, None] = None
+
+
+def upgrade() -> None:
+    pass
+
+
+def downgrade() -> None:
+    pass
