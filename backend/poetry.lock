@@ -1233,14 +1233,13 @@ files = [
 
 [[package]]
 name = "rsa"
-version = "4.9.1"
+version = "4.2"
 description = "Pure-Python RSA implementation"
 optional = false
-python-versions = "<4,>=3.6"
+python-versions = "*"
 groups = ["main"]
 files = [
-    {file = "rsa-4.9.1-py3-none-any.whl", hash = "sha256:68635866661c6836b8d39430f97a996acbd61bfa49406748ea243539fe239762"},
-    {file = "rsa-4.9.1.tar.gz", hash = "sha256:e7bdbfdb5497da4c07dfd35530e1a902659db6ff241e39d9953cad06ebd0ae75"},
+    {file = "rsa-4.2.tar.gz", hash = "sha256:aaefa4b84752e3e99bd8333a2e1e3e7a7da64614042bd66f775573424370108a"},
 ]
 
 [package.dependencies]
@@ -1686,5 +1685,5 @@ files = [
 
 [metadata]
 lock-version = "2.1"
-python-versions = "^3.11"
-content-hash = "b12d9c1c797632c7a8bfc7a85134143e9391df3c7c47e5d866c1d0ad652d94e9"
+python-versions = ">=3.11"
+content-hash = "055445e015ce0d82c05f72a76f5eb93b7b76f242808bba08eb137b24f99a32e9"
