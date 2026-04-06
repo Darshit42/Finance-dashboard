@@ -1,5 +1,5 @@
 [project]
-name = "finance-backend"
+name = "backend"
 version = "0.1.0"
 description = "FinanceBoard API"
 authors = [

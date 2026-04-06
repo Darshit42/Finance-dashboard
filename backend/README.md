@@ -24,7 +24,7 @@ Wait until the container is healthy, then continue with migrations. The default 
 ### 1 — Backend
 
 ```bash
-cd finance-backend
+cd backend
 
 # Copy and configure environment
 cp .env.example .env
@@ -110,7 +110,7 @@ All variables are read from `finance-backend/.env`. See `.env.example` for the f
 Use Poetry’s virtualenv (where FastAPI and the rest of the stack are installed). **Do not run plain `pytest`** with your system or Conda Python, or you will get `ModuleNotFoundError: No module named 'fastapi'`.
 
 ```bash
-cd finance-backend
+cd backend
 poetry install          # once, if you have not already
 poetry run pytest
 ```
@@ -120,7 +120,7 @@ poetry run pytest
 ## Architecture
 
 ```
-finance-backend/
+backend/
 ├── app/
 │   ├── core/          # config, db, security, dependencies (RBAC)
 │   ├── models/        # SQLAlchemy ORM models
@@ -133,7 +133,7 @@ finance-backend/
 ├── alembic/           # migrations
 └── tests/unit/        # service + RBAC unit tests
 
-finance-frontend/
+frontend/
 └── src/
     ├── api/           # Axios callers per domain
     ├── components/    # Layout (AppLayout, ProtectedRoute)
